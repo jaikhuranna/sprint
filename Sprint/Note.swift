@@ -24,6 +24,7 @@ class TodoContent : Content
     let id : UUID = UUID()
     var task : String = ""
     var completed : Bool = false
+    var date : Date?
 }
 
 

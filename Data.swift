@@ -11,7 +11,7 @@ class Data
 {
     static var collections : [Collection] = []
     
-    let sampleData: [Collection] = [
+    static let sampleData: [Collection] = [
         {
             let collection = Collection()
             
