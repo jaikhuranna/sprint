@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3DF2BA4F2D91770F00506CD1 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2BA4E2D91770F00506CD1 /* Collections.swift */; };
+		3DF2BA512D91785200506CD1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2BA502D91785200506CD1 /* Data.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3D2A2D1D2D915C4100BDC254 /* Sprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF2BA4E2D91770F00506CD1 /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
+		3DF2BA502D91785200506CD1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +52,8 @@
 		3D2A2D142D915C4100BDC254 = {
 			isa = PBXGroup;
 			children = (
+				3DF2BA4E2D91770F00506CD1 /* Collections.swift */,
+				3DF2BA502D91785200506CD1 /* Data.swift */,
 				3D2A2D1F2D915C4100BDC254 /* Sprint */,
 				3D2A2D1E2D915C4100BDC254 /* Products */,
 			);
@@ -132,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF2BA512D91785200506CD1 /* Data.swift in Sources */,
+				3DF2BA4F2D91770F00506CD1 /* Collections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
