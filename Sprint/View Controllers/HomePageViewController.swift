@@ -12,6 +12,7 @@ class HomePageViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var addCollectionButton: UIImageView!
     @IBOutlet weak var homePageCollectionView: UICollectionView!
+    @IBOutlet weak var addNewCollection: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,15 @@ class HomePageViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         homePageCollectionView.delegate = self
         homePageCollectionView.dataSource = self
+        
+        // Enable interaction
+        addNewCollection.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(addNewCollectionTapped))
+        addNewCollection.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func addNewCollectionTapped() {
+        performSegue(withIdentifier: "goToNote", sender: self)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

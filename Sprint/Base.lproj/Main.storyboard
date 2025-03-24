@@ -42,6 +42,9 @@
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DRz-t5-vcq">
                                 <rect key="frame" x="161.66666666666666" y="745.33333333333337" width="70" height="75.333333333333371"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="4dx-7Y-kfG"/>
                                     <constraint firstAttribute="width" constant="70" id="5Ho-5q-pSF"/>
@@ -148,9 +151,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addCollectionButton" destination="DRz-t5-vcq" id="sFf-ti-CvE"/>
+                        <outlet property="addNewCollection" destination="DRz-t5-vcq" id="7Uu-KO-LJd"/>
                         <outlet property="bgView" destination="Bi3-5G-ugh" id="agZ-5Y-bn6"/>
                         <outlet property="homePageCollectionView" destination="BVu-qN-Ioj" id="MkU-12-ZAn"/>
-                        <segue destination="mMg-4r-h4i" kind="show" id="9DX-S0-s00"/>
+                        <segue destination="mMg-4r-h4i" kind="show" identifier="goToNote" id="1pA-1r-iaL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -165,7 +169,6 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HZ-yc-oMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-
             <point key="canvasLocation" x="1558" y="339"/>
         </scene>
         <!--Navigation Controller-->
