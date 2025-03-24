@@ -36,42 +36,43 @@ class ImageContent : Content
 class MarkdownContent : Content
 {
     var text : String?
-    var fontSize : Int?
+    var fontSize : Int = 16
 }
 
 // Markdown Defintions
-class Body : MarkdownContent
-{
-    override var fontSize: Int? {
-        didSet
-        {
-            fontSize = 16;
-        }
+class Body: MarkdownContent {
+    override init() {
+        super.init()
+        self.fontSize = 16
     }
 }
 
-class heading : MarkdownContent
-{
-    enum order
-    {
-        case one;
-        case two;
-        case three;
+
+class heading: MarkdownContent {
+    enum Order {
+        case one, two, three
     }
-    var type : order = .one;
     
-    override var fontSize: Int? {
-        didSet
-        {
-            switch type
-            {
-            case .one:
-                fontSize = 32;
-            case .two:
-                fontSize = 24;
-            case .three:
-                fontSize = 18;
-            }
+    var type: Order {
+        didSet {
+            updateFontSize()
+        }
+    }
+    
+    override init() {
+        self.type = .one // Default value
+        super.init()
+        updateFontSize()
+    }
+    
+    private func updateFontSize() {
+        switch type {
+        case .one:
+            fontSize = 32
+        case .two:
+            fontSize = 24
+        case .three:
+            fontSize = 18
         }
     }
 }

@@ -9,6 +9,8 @@ import UIKit
 
 class TodoContentTableViewCell: UITableViewCell {
 
+    
+    
     @IBOutlet var taskTextView: UITextView!
     
     override func awakeFromNib() {

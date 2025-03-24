@@ -24,7 +24,7 @@ class Data
             heading1.text = "Project Kickoff"
             
             let body1 = Body()
-            body1.text = "Discussed the roadmap and assigned tasks."
+            body1.text = "Discussed the roadmap and assigned tasks. and the following of it all should be looked at"
             
             let todo1 = TodoContent()
             todo1.task = "Send meeting summary"
@@ -33,7 +33,7 @@ class Data
             let image1 = ImageContent()
             image1.Image = "roadmap.png"
             
-            note1.content = [heading1, body1, todo1, image1]
+            note1.content = [heading1, todo1, body1, image1]
             
             let note2 = Note()
             note2.title = "Grocery List"
