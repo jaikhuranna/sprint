@@ -29,7 +29,7 @@ class TodoContent : Content
 
 class ImageContent : Content
 {
-    let Image : String = ""
+    var Image : String = "sunrise"
 }
 
 class MarkdownContent : Content
